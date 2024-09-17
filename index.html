@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="base.css" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Свойство BackGround CSS</title>
+	</head>
+	<body>
+		<div class="container">
+			<section class="content hero">
+				<h1>Свойство BackGround - задний фон</h1>
+				<div class="content">
+					<p>
+						Фон элемента HTML — это то, что появляется за текстом. Хотя CSS
+						позволяет применять фон к элементу любого типа, он в основном
+						используется для блочных элементов
+					</p>
+				</div>
+			</section>
+			<section class="content hero">
+				<h2>Пример 1</h2>
+				<p>
+					Использование свойства
+					<code>background: "цвет";</code>
+				</p>
+
+				<div class="block">
+					<div class="content block-item-1">
+						<h3>Код CSS</h3>
+						<!-- prettier-ignore -->
+						<code> 
+.example-1 {
+	background: #32b5a4;
+}
+			</code>
+					</div>
+					<div class="block-item-2">
+						<div class="example example-1"></div>
+					</div>
+				</div>
+			</section>
+			<section class="content hero">
+				<h2>Пример 2</h2>
+				<p>
+					Использование <code>background: rgb(a, b, c);</code> и
+					<code>background: rgba(a, b, c, d);</code>
+				</p>
+
+				<div class="block">
+					<div class="content block-item-1">
+						<h3>Код CSS</h3>
+						<!-- prettier-ignore -->
+						<code> 
+.example-2 {
+	background: rgb(0, 0, 0);
+}
+.example-3 {
+	background: rgba(0, 0, 0, 0.5);
+}
+			</code>
+					</div>
+					<div class="block-item-2">
+						<div class="example example-2"></div>
+						<div class="example example-3"></div>
+						<!--добавить .dark для наглядного примера rgba-->
+					</div>
+				</div>
+			</section>
+			<section class="content hero">
+				<h2>Пример 3</h2>
+				<p>
+					Использование
+					<code>background-image: url('Путь к картинке');</code> или же
+					<code>background: url('Путь к картинке');</code>,
+				</p>
+
+				<div class="block">
+					<div class="content block-item-1">
+						<h3>Код CSS</h3>
+						<!-- prettier-ignore -->
+						<code> 
+.example-4 {
+	background-image: url("img/bg.jpg");
+}
+			</code>
+					</div>
+					<div class="block-item-2">
+						<div class="example example-4"></div>
+					</div>
+				</div>
+			</section>
+			<section class="content hero">
+				<h2>Пример 4</h2>
+				<p>
+					Использование
+					<code>background-image: url('Путь к картинке');</code> +
+					<code>background-repeat: no-repeat;</code>
+				</p>
+
+				<div class="block">
+					<div class="content block-item-1">
+						<h3>Код CSS</h3>
+						<!-- prettier-ignore -->
+						<code> 
+.example-5{
+	background-image: url("img/avatar.jpg");
+	background-repeat: no-repeat;
+}
+			</code>
+					</div>
+					<div class="block-item-2">
+						<div class="example example-5"></div>
+					</div>
+				</div>
+			</section>
+			<section class="content hero">
+				<h2>Пример 5</h2>
+				<p>
+					Использование
+					<code>background-image: url('Путь к картинке');</code> +
+					<code>background-position: center;</code>
+				</p>
+
+				<div class="block">
+					<div class="content block-item-1">
+						<h3>Код CSS</h3>
+						<!-- prettier-ignore -->
+						<code> 
+.example-6{
+	background-image: url("img/avatar.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+			</code>
+					</div>
+					<div class="block-item-2">
+						<div class="example example-6"></div>
+					</div>
+				</div>
+			</section>
+			<section class="content hero">
+				<h2>Пример 6</h2>
+				<p>
+					Использование
+					<code>background-image: url('Путь к картинке');</code> +
+					<code>background-size: 'свойство';</code>
+				</p>
+
+				<div class="block">
+					<div class="content block-item-1">
+						<h3>Код CSS</h3>
+						<!-- prettier-ignore -->
+						<code> 
+.example-7{
+	background-image: url("img/avatar.jpg");
+	background-repeat: no-repeat;
+	background-size: 'contain' или 'cover';
+}
+			</code>
+					</div>
+					<div class="block-item-2">
+						<div class="example example-7"></div>
+					</div>
+				</div>
+			</section>
+			<section class="content hero">
+				<h2>Пример 7</h2>
+				<p>
+					Использование
+					<code>background-image: url('Путь к картинке');</code> +
+					<code>background-attachment: 'свойство';</code>
+				</p>
+
+				<div class="block">
+					<div class="content block-item-1">
+						<h3>Код CSS</h3>
+						<!-- prettier-ignore -->
+						<code> 
+.example-8{
+	background-image: url("img/avatar.jpg");
+	background-repeat: no-repeat;
+	background-attachment: 'fixed' или 'local';
+}
+			</code>
+					</div>
+					<div class="block-item-2">
+						<div class="example example-8">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+							tenetur impedit sint id, exercitationem obcaecati voluptate
+							aliquid mollitia ipsam voluptatum corrupti dolorem molestias
+							reiciendis quo possimus, veritatis veniam adipisci similique
+							sapiente. Veniam, deserunt? Voluptatum voluptates fugiat beatae
+							sunt odit laborum omnis magnam laboriosam, praesentium sequi,
+							harum quisquam officia ea accusantium facilis tempore aliquid
+							optio quia quam dolorem illo similique corporis repellendus quasi!
+							Quidem nisi nobis ipsa voluptatum minima cumque ducimus, beatae
+							labore vero veniam ipsam praesentium eum aliquam. Mollitia ipsum
+							iste assumenda a cum doloremque ipsa deserunt vel, distinctio eos
+							ab sequi doloribus pariatur molestias aperiam labore dignissimos
+							fuga, voluptatem ad dolore placeat. Nesciunt voluptatum quasi, eos
+							doloremque laboriosam voluptates consequuntur perspiciatis ducimus
+							magni ea consectetur, hic eaque quae obcaecati at necessitatibus
+							ab aspernatur perferendis magnam! Modi eveniet aperiam veritatis
+							aliquid inventore iste ut id ullam assumenda, provident vel nisi.
+							Totam aut molestias labore vero, soluta sequi doloribus accusamus
+							tempore temporibus porro? Sapiente ut repellat maiores, beatae
+							architecto sint! Error obcaecati ullam quis perferendis, sit
+							veritatis expedita architecto sint ipsum odio asperiores libero
+							eligendi autem earum alias, modi dolore, minus nobis reiciendis ex
+							itaque! Illum enim omnis suscipit consequuntur eius odio officiis
+							error sint et nisi, quaerat vitae culpa earum veritatis corporis
+							labore velit nesciunt dicta veniam fuga. Facilis, vero sapiente
+							dicta aut quo aperiam qui molestias dolorem odio recusandae
+							tempora commodi officia culpa laborum autem dolore fuga excepturi?
+							Quaerat architecto quisquam, nostrum repudiandae quod doloremque
+							ipsum illum consequuntur est deleniti placeat corrupti eos odit
+							impedit culpa, cum rem nesciunt, mollitia sit temporibus veritatis
+							minima facilis fugiat? Dolor blanditiis quae quaerat, enim et,
+							dolorem fugit voluptates quod aliquid quas labore fuga
+							perspiciatis, nulla ratione. Placeat, tempore sit magni harum
+							eligendi, libero repellendus in architecto culpa nostrum autem
+							perferendis atque voluptatem quia. Sapiente dolores dolorem
+							necessitatibus accusamus, distinctio minus neque magnam
+							exercitationem molestias iste delectus iure. Tempora, nostrum?
+							Suscipit tenetur maiores animi ab laudantium eum necessitatibus
+							quisquam consectetur obcaecati repellendus dolorum amet laboriosam
+							voluptatum, provident alias libero quaerat in quos, voluptate
+							deleniti cupiditate delectus rem doloremque. Nesciunt dignissimos
+							quas eveniet quasi, delectus aliquam voluptate ipsa, quis est
+							repellat, natus soluta labore libero. Adipisci nobis dignissimos,
+							ab, expedita quidem at quia odio, animi asperiores hic aut modi
+							enim quas aliquam atque! Laborum fugit earum, doloribus
+							reiciendis, ea minima voluptas sed libero debitis at reprehenderit
+							culpa modi possimus porro quisquam error, provident facilis
+							voluptate magni consectetur nam quasi. Non vel nostrum commodi ea.
+						</div>
+					</div>
+				</div>
+			</section>
+			<h2>
+				Доподнительные штуки (градиенты, универсальное свойство background)
+			</h2>
+			<section class="content hero">
+				<h2>Пример 8</h2>
+				<p>
+					Использование универсального свойства
+					<code>background: url('Путь к картинке') 0 0 / cover no-repeat;</code>
+				</p>
+
+				<div class="block block-col">
+					<div class="example example-9"></div>
+					<div class="content">
+						<h3>Код CSS</h3>
+						<!-- prettier-ignore -->
+						<code> 
+.example-9{
+	background: url('img/bg.jpg') 0 0 / cover no-repeat;
+}
+			</code>
+					</div>
+				</div>
+			</section>
+			<section class="content hero">
+				<h2>Пример 9</h2>
+				<p>Использование линейного градиента</p>
+
+				<div class="block block-col">
+					<div class="example example-10"></div>
+					<div class="content">
+						<h3>Код CSS</h3>
+						<!-- prettier-ignore -->
+						<code> 
+.example-10{
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+			</code>
+					</div>
+				</div>
+			</section>
+			<section class="content hero">
+				<h2>Пример 10</h2>
+				<p>Использование радиального градиента</p>
+
+				<div class="block block-col">
+					<div class="example example-11"></div>
+					<div class="content">
+						<h3>Код CSS</h3>
+						<!-- prettier-ignore -->
+						<code> 
+.example-11{
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+			</code>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>
